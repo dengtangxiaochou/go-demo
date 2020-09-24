@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 //student结构体
-type student struct {
+type Student struct {
 	Name string`json:"name"`
 	Age int`json:"age"`
 	Score int`json:"int"`
@@ -32,11 +32,12 @@ func reflectChangeStruct(s interface{})  {
 }
 
 func main()  {
-	stu1 := student{
+	stu1 := Student{
 		Name:  "小王",
 		Age:   20,
 		Score: 99,
 	}
 
 	reflectChangeStruct(&stu1)
+	fmt.Printf("%#v",stu1)//main.Student{Name:"小黄", Age:19, Score:99}
 }
