@@ -1,0 +1,103 @@
+﻿14:33:07,239 |-INFO in ch.qos.logback.core.joran.action.StatusListenerAction - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+14:33:07,242 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos] to OFF
+14:33:07,242 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@366e2eef - Propagating OFF level on Logger[com.alibaba.nacos] onto the JUL framework
+14:33:07,244 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [LOG_FILE] to Logger[com.alibaba.nacos]
+14:33:07,253 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:33:07,253 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@531be3c5 - Registering current configuration as safe fallback point
+14:33:08,674 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4df828d7 - URL [jar:file:/app.jar!/BOOT-INF/classes!/logback-spring.xml] is not of type file
+14:33:08,709 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:33:08,713 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:33:08,713 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:33:08,713 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:33:08,714 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:33:08,714 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+14:33:08,716 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:33:08,716 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [LOG_FILE]
+14:33:08,717 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:33:08,719 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@11902257 - No compression will be used
+14:33:08,719 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@11902257 - Will use the pattern /releases/logs/mall-store-biz/mall-store-biz-%d{yyyy-MM-dd}.%i.log for the active file
+14:33:08,719 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@62fdb4a6 - The date pattern is 'yyyy-MM-dd' from file name pattern '/releases/logs/mall-store-biz/mall-store-biz-%d{yyyy-MM-dd}.%i.log'.
+14:33:08,719 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@62fdb4a6 - Roll-over at midnight.
+14:33:08,725 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@62fdb4a6 - Setting initial period to Sat Oct 10 14:33:06 CST 2020
+14:33:08,725 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@62fdb4a6 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+14:33:08,725 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@62fdb4a6 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+14:33:08,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[LOG_FILE] - Active log file name: /releases/logs/mall-store-biz/mall-store-biz.log
+14:33:08,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[LOG_FILE] - File property is set to [/releases/logs/mall-store-biz/mall-store-biz.log]
+14:33:08,727 |-INFO in ch.qos.logback.core.joran.action.ShutdownHookAction - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DelayingShutdownHook]
+14:33:08,727 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [com.aliyun.openservices.log.logback.LoghubAppender]
+14:33:08,727 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ALIYUN]
+14:33:08,732 |-INFO in ch.qos.logback.core.joran.action.StatusListenerAction - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+14:33:08,733 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos] to OFF
+14:33:08,733 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@11e21d0e - Propagating OFF level on Logger[com.alibaba.nacos] onto the JUL framework
+14:33:08,733 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [LOG_FILE] to Logger[com.alibaba.nacos]
+14:33:08,734 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:33:08,734 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@1dd02175 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+14:33:08,770 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4df828d7 - URL [jar:file:/app.jar!/BOOT-INF/lib/nacos-client-1.1.1.jar!/nacos-logback.xml] is not of type file
+14:33:08,773 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:33:08,802 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Will scan for changes in [jar:file:/app.jar!/BOOT-INF/lib/nacos-client-1.1.1.jar!/nacos-logback.xml] 
+14:33:08,802 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeTask scanning period to 30 seconds
+14:33:08,803 |-INFO in ch.qos.logback.classic.joran.action.ContextNameAction - Setting logger context name as [nacos]
+14:33:08,803 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:33:08,803 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONFIG_LOG_FILE]
+14:33:08,806 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@6a79c292 - No compression will be used
+14:33:08,807 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:33:08,808 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[CONFIG_LOG_FILE] - Active log file name: /root/logs/nacos/config.log
+14:33:08,808 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[CONFIG_LOG_FILE] - File property is set to [/root/logs/nacos/config.log]
+14:33:08,809 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:33:08,809 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [NAMING_LOG_FILE]
+14:33:08,810 |-INFO in ch.qos.logback.core.rolling.FixedWindowRollingPolicy@21a947fe - No compression will be used
+14:33:08,810 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:33:08,810 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[NAMING_LOG_FILE] - Active log file name: /root/logs/nacos/naming.log
+14:33:08,810 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[NAMING_LOG_FILE] - File property is set to [/root/logs/nacos/naming.log]
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos.client] to INFO
+14:33:08,811 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@11e21d0e - Propagating INFO level on Logger[com.alibaba.nacos.client] onto the JUL framework
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.alibaba.nacos.client] to false
+14:33:08,811 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONFIG_LOG_FILE] to Logger[com.alibaba.nacos.client]
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos.client.config] to INFO
+14:33:08,811 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@11e21d0e - Propagating INFO level on Logger[com.alibaba.nacos.client.config] onto the JUL framework
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.alibaba.nacos.client.config] to false
+14:33:08,811 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONFIG_LOG_FILE] to Logger[com.alibaba.nacos.client.config]
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos.client.naming] to INFO
+14:33:08,811 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@11e21d0e - Propagating INFO level on Logger[com.alibaba.nacos.client.naming] onto the JUL framework
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.alibaba.nacos.client.naming] to false
+14:33:08,811 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [NAMING_LOG_FILE] to Logger[com.alibaba.nacos.client.naming]
+14:33:08,811 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:33:08,812 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6a396c1e - Registering current configuration as safe fallback point
+14:33:09,133 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@27ce24aa - URL [jar:file:/app.jar!/BOOT-INF/classes!/logback-spring.xml] is not of type file
+14:33:09,139 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+14:33:09,141 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:33:09,141 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:33:09,141 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:33:09,141 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:33:09,141 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+14:33:09,143 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:33:09,143 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [LOG_FILE]
+14:33:09,143 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:33:09,144 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1209702763 - No compression will be used
+14:33:09,144 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1209702763 - Will use the pattern /releases/logs/mall-store-biz/mall-store-biz-%d{yyyy-MM-dd}.%i.log for the active file
+14:33:09,145 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3d51f06e - The date pattern is 'yyyy-MM-dd' from file name pattern '/releases/logs/mall-store-biz/mall-store-biz-%d{yyyy-MM-dd}.%i.log'.
+14:33:09,145 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3d51f06e - Roll-over at midnight.
+14:33:09,145 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3d51f06e - Setting initial period to Sat Oct 10 14:33:06 CST 2020
+14:33:09,145 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3d51f06e - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+14:33:09,145 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@3d51f06e - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+14:33:09,145 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[LOG_FILE] - Active log file name: /releases/logs/mall-store-biz/mall-store-biz.log
+14:33:09,145 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[LOG_FILE] - File property is set to [/releases/logs/mall-store-biz/mall-store-biz.log]
+14:33:09,145 |-INFO in ch.qos.logback.core.joran.action.ShutdownHookAction - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DelayingShutdownHook]
+14:33:09,145 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [com.aliyun.openservices.log.logback.LoghubAppender]
+14:33:09,146 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ALIYUN]
+14:33:09,149 |-INFO in ch.qos.logback.core.joran.action.StatusListenerAction - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+14:33:09,150 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.alibaba.nacos] to OFF
+14:33:09,150 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7ed7259e - Propagating OFF level on Logger[com.alibaba.nacos] onto the JUL framework
+14:33:09,150 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [LOG_FILE] to Logger[com.alibaba.nacos]
+14:33:09,151 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+14:33:09,151 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@28eaa59a - Registering current configuration as safe fallback point
+14:33:09,155 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@7ed7259e - Propagating DEBUG level on Logger[com.perfectdiary.mall.member.mapper] onto the JUL framework
