@@ -1,7 +1,9 @@
 package session
 
 import (
+	"errors"
 	"github.com/garyburd/redigo/redis"
+	uuid "github.com/satori/go.uuid"
 	"sync"
 	"time"
 )
@@ -58,11 +60,30 @@ func myPool(addr, password string) *redis.Pool {
 }
 
 func (r *RedisSessionMgr) CreateSession() (session Session, err error) {
-	panic("implement me")
+	r.rwlock.Lock()
+	defer r.rwlock.Unlock()
+	//用UUID作为sessionID
+	id := uuid.NewV4()
+	//转string
+	sessionId := id.String()
+	//创建个Session
+	session = NewRedisSession(sessionId,r.pool)
+	//加入到大MAP
+	r.sessionMap[sessionId] = session
+	return
 }
 
 func (r *RedisSessionMgr) Get(sessionId string) (session Session, err error) {
-	panic("implement me")
+	//加锁
+	r.rwlock.Lock()
+	defer r.rwlock.Unlock()
+	//先判断内存
+	session, ok := r.sessionMap[sessionId]
+	if !ok {
+		err = errors.New("session not exists")
+		return
+	}
+	return
 }
 
 //构造函数
